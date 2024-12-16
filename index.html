@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин цветов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Цветочный Магазин</h1>
+            <nav>
+                <button id="loginBtn">Войти</button>
+                <button id="registerBtn">Зарегистрироваться</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="products">
+            <h2>Наши цветы</h2>
+            <div class="product-grid">
+              <div class="product">
+                    <img src="https://www.rosemarkt.ru/resources/data/photos/55f993e489d52/big.jpg" alt="Роза">
+                    <h3>Розы</h3>
+                    <p>Цена: 500 руб.</p>
+                    <button class="addToCart" data-id="1" data-name="Роза" data-price="500">В корзину</button>
+                </div>
+              <div class="product">
+                    <img src="https://avatars.mds.yandex.net/i?id=6cdee573972242b21230885c82b10188f8499112d911a52f-10779417-images-thumbs&n=13" alt="Тюльпан">
+                    <h3>Тюльпаны</h3>
+                    <p>Цена: 300 руб.</p>
+                    <button class="addToCart" data-id="2" data-name="Тюльпан" data-price="300">В корзину</button>
+                </div>
+                <div class="product">
+                    <img src="https://avatars.mds.yandex.net/i?id=c1de6628ce18b71e84bb3db5c093b519_l-4571017-images-thumbs&ref=rim&n=13&w=1200&h=1200" alt="Ромашка">
+                    <h3>Ромашки</h3>
+                    <p>Цена: 150 руб.</p>
+                     <button class="addToCart" data-id="3" data-name="Ромашка" data-price="150">В корзину</button>
+                </div>
+                 <div class="product">
+                    <img src="https://armavir.kubanbuket.ru/wa-data/public/shop/products/75/23/2375/images/2514/2514.750x0.jpg" alt="Подсолнух">
+                    <h3>Подсолнухи</h3>
+                    <p>Цена: 600 руб.</p>
+                    <button class="addToCart" data-id="4" data-name="Подсолнух" data-price="600">В корзину</button>
+                </div>
+               <div class="product">
+                    <img src="https://planetaflora.ru/images/virtuemart/category/buket-lilii.jpg" alt="Лилия">
+                    <h3>Лилии</h3>
+                    <p>Цена: 700 руб.</p>
+                   <button class="addToCart" data-id="5" data-name="Лилия" data-price="700">В корзину</button>
+                </div>
+                <div class="product">
+                  <img src="https://cdn1.ozone.ru/s3/multimedia-9/c600/6367810317.jpg" alt="Астра">
+                    <h3>Астры</h3>
+                    <p>Цена: 400 руб.</p>
+                    <button class="addToCart" data-id="6" data-name="Астра" data-price="400">В корзину</button>
+                 </div>
+                 
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Магазин цветов</p>
+        </div>
+    </footer>
+
+    <!-- Модальные окна -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Вход</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                 <input type="text" placeholder="Имя" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="cartModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Корзина</h2>
+          <div id="cartItems">
+            
+          </div>
+          <p>Итого: <span id="cartTotal">0</span> руб.</p>
+          <button id="checkoutBtn">Оформить заказ</button>
+      </div>
+  </div>
+
+  <button id="cartButton">Корзина <span id="cartCount">0</span></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
