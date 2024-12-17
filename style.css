@@ -28,7 +28,42 @@ header .container {
 header h1 {
     margin: 0;
 }
+header h1 {
+    margin: 0;
+}
 
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+section {
+    padding: 15px;
+}
 header nav button {
     background-color: white;
     color: #4CAF50;
